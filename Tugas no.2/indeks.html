@@ -1,0 +1,87 @@
+<html>
+    <head>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        $( document ).ready(function(){
+        $( "#square" ).dblclick(function(){    
+           $( "#square" ).css( "background-color", "red" );
+            
+        }); 
+        $( "#satu" ).dblclick(function(){    
+           $( "#satu" ).css( "background-color", "red" );
+            
+        }); 
+        $( "#dua" ).dblclick(function(){    
+           $( "#dua" ).css( "background-color", "red" );
+            
+        }); 
+        $( "#tiga" ).dblclick(function(){    
+           $( "#tiga" ).css( "background-color", "red" );
+            
+        }); 
+           });
+        </script>
+    
+        <style type="text/css">
+            body{
+                background-color: #244e96;
+            }
+            h1{
+                text-align: center;
+                font-family: trueno;
+                font-size: 26px;
+                color: #fff;
+            }
+            #square {
+                   width:60px;
+                   height:60px;
+                   background-color:yellow; 
+                   border-radius: 12px;
+                   
+            }
+            #satu {
+                   width:60px;
+                   height:60px;
+                   background-color:yellow; 
+                   border-radius: 12px;
+                   
+            }
+            #dua {
+                   width:60px;
+                   height:60px;
+                   background-color:yellow; 
+                   border-radius: 12px;
+            }
+            #tiga {
+                   width:60px;
+                   height:60px;
+                   background-color:yellow; 
+                   border-radius: 12px;
+            }
+          .gambar{
+            text-align: center;
+            display: flex;
+            margin-right: 21;
+            
+          }
+            .gambar p{
+	            width:60px;
+   	            height:60px;
+   	            background-color:yellow; 
+            	border-radius: 8px;
+            	margin-right: 20px;
+}
+          
+        </style>
+    </head>
+    <body>
+    <h1>Sulap Silahkan double click</h1>
+
+    <div class="gambar">
+        <p id="square"></p>
+        <p id="satu"> </p>
+        <p id="dua"> </p>
+        <p id="tiga"> </p>
+    </div>
+    </body>
+    </html>
