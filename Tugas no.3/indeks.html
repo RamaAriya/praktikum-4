@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <title>
+
+    </title>
+    <head>
+        <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+
+            $("#btn-satu").click(function(){
+            $(".kotak").fadeOut('slow');
+            });
+            $("#btn-dua").click(function(){
+                $(".kotak").fadeIn('slow');
+            });
+            $("#btn-tiga").click(function(){
+                $(".kotak").fadeTo('slow',0.30);
+            });
+        });
+           
+        </script>
+
+        <style type="text/css">
+
+            .kotak {
+                width: 200px;
+                height: 200px;
+                background: fuchsia;
+                margin-bottom: 10px;
+                
+            }
+            button{
+               position: relative;
+               top: 110%;
+               border: none;
+               border-radius: 5px;
+               
+                
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="kotak">
+            
+        </div>
+        <div class="button">
+            <button id="btn-dua">Fade in </button>
+            <button id="btn-satu">Fade out </button>
+            <button id="btn-tiga">Fade to </button>
+        </div>
+    </body>
+</html>
