@@ -1,0 +1,59 @@
+<html>
+<head>
+ <title>TUGAS NO.1 TOMBOL MENYEMBUNYIKAN DAN MENAMPILKAN</title>
+ <link rel="stylesheet" href="style.css">
+ <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+ <script>
+ //Inisiasi awal penggunaan jQuery
+ $(document).ready(function(){
+  //Pertama sembunyikan elemen class gambar
+        $('.gambar').hide();        
+
+  //Ketika elemen class tampil di klik maka elemen class gambar tampil
+        $('.tampil').click(function(){
+   $('.gambar').show();
+        });
+
+  //Ketika elemen class sembunyi di klik maka elemen class gambar sembunyi
+        $('.sembunyi').click(function(){
+   //Sembunyikan elemen class gambar
+   $('.gambar').hide();        
+        });
+
+        
+ // Gambar kedua.....
+
+
+        //Pertama sembunyikan elemen class gambar
+        $('.gambar1').hide();        
+
+  //Ketika elemen class tampil di klik maka elemen class gambar tampil
+        $('.tampil1').click(function(){
+   $('.gambar1').show();
+        });
+
+  //Ketika elemen class sembunyi di klik maka elemen class gambar sembunyi
+        $('.sembunyi1').click(function(){
+   //Sembunyikan elemen class gambar
+   $('.gambar1').hide();        
+        });
+ });
+ </script>
+</head>
+<body>
+    <div class="btn">
+          
+        <input type="button" class="tampil" value="Tampil"/>
+        <input type="button" class="sembunyi" value="Sembunyikan"/>
+        <input type="button" class="tampil1" value="Tampil"/>
+        <input type="button" class="sembunyi1" value="Sembunyikan"/>
+    </div>
+
+ <div class="gambar">
+  <img src="gambar.jpg" alt="Image" height="500" width="500"/> 
+ </div>
+ <div class="gambar1">
+      <img src="gambar1.jpg" alt="Image" height="500" width="500"/> 
+ </div>
+</body>
+</html>
